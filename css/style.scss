@@ -2,18 +2,49 @@
 @import "variables";
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-straight/css/uicons-regular-straight.css');
 
-
-* {
-  box-sizing: border-box;
-}
 
 body {  
   @include siteMain;
+  p{
+    margin:0;
+    padding:0;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
+}
+
+.custom-container{
+  width:80%;
+  margin:0 auto;
+
+  @include minMax(map-get($breakpoints, "sm"), map-get($breakpoints, "lg")) {
+    width: 90%;
+  }
+}
+
+header{
+  .top-header{
+    @include linear-gradient(270deg, #F3AE3D 0%, #D9273D 100%);     
+     color: map-get($colors, white);
+     padding:15px 0;
+     font-size:$fsize - 2px;
+
+     a{
+      color:map-get($colors, white);
+     }
+  }
+  .header-social{
+    a{
+      .bi{
+        font-size:$fsize + 6px;
+        color: map-get($colors, white);
+      }
+    }
+  }
 }
 

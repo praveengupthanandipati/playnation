@@ -30,14 +30,11 @@ $breakpoints: (
 );
 
 //font weights
-$font-weights: (
-  extralight: 200,
+$font-weights: (  
   light: 300,
-  regular: 400,
-  medium: 500,
+  regular: 400,  
   semibold: 600,
-  bold: 700,
-  extrabold: 800,
+  bold: 700,  
 );
 
 @each $weight-name, $weight-value in $font-weights {

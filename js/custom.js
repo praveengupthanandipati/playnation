@@ -1,4 +1,23 @@
 
+//top header swiper offer
+ var swiper = new Swiper(".mySwiper-offer", {
+      spaceBetween: 50,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+      direction: "horizontal",
+      spaceBetween: 50,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+
+
+
 // Ensure header class toggling works correctly
 $(function () {
   const $header = $(".fixed-top");

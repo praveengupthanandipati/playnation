@@ -1,9 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
-.font-extralight {
-  font-weight: 200;
-}
-
+@import url("https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-straight/css/uicons-regular-straight.css");
 .font-light {
   font-weight: 300;
 }
@@ -12,20 +9,12 @@
   font-weight: 400;
 }
 
-.font-medium {
-  font-weight: 500;
-}
-
 .font-semibold {
   font-weight: 600;
 }
 
 .font-bold {
   font-weight: 700;
-}
-
-.font-extrabold {
-  font-weight: 800;
 }
 
 .font-black {
@@ -132,10 +121,6 @@
   background: #000048;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 body {
   -webkit-font-smoothing: antialiased;
   -ms-font-smoothing: antialiased;
@@ -146,8 +131,36 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
 }
+body p {
+  margin: 0;
+  padding: 0;
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
+}
+
+.custom-container {
+  width: 80%;
+  margin: 0 auto;
+}
+@media (min-width: 576px) and (max-width: 996px) {
+  .custom-container {
+    width: 90%;
+  }
+}
+
+header .top-header {
+  background: linear-gradient(270deg, #F3AE3D 0%, #D9273D 100%);
+  color: #fff;
+  padding: 15px 0;
+  font-size: 14px;
+}
+header .top-header a {
+  color: #fff;
+}
+header .header-social a .bi {
+  font-size: 22px;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
