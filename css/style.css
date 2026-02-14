@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+.font-extralight {
+  font-weight: 200;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-extrabold {
+  font-weight: 800;
+}
+
+.font-black {
+  color: #282828;
+}
+
+.background-black {
+  background: #282828;
+}
+
+.font-white {
+  color: #fff;
+}
+
+.background-white {
+  background: #fff;
+}
+
+.font-red {
+  color: #aa0607;
+}
+
+.background-red {
+  background: #aa0607;
+}
+
+.font-gray {
+  color: #828282;
+}
+
+.background-gray {
+  background: #828282;
+}
+
+.font-darkprimary {
+  color: #380100;
+}
+
+.background-darkprimary {
+  background: #380100;
+}
+
+.font-primary {
+  color: #460100;
+}
+
+.background-primary {
+  background: #460100;
+}
+
+.font-lightprimary {
+  color: #831c1a;
+}
+
+.background-lightprimary {
+  background: #831c1a;
+}
+
+.font-secondary {
+  color: #EB7533;
+}
+
+.background-secondary {
+  background: #EB7533;
+}
+
+.font-lightsecondary {
+  color: #f0945e;
+}
+
+.background-lightsecondary {
+  background: #f0945e;
+}
+
+.font-darksecondary {
+  color: #c44800;
+}
+
+.background-darksecondary {
+  background: #c44800;
+}
+
+.font-lightgray {
+  color: #e7eefa;
+}
+
+.background-lightgray {
+  background: #e7eefa;
+}
+
+.font-lightgradient {
+  color: linear-gradient(270deg, #E9DEFA 0%, rgba(251, 252, 219, 0.8) 100%);
+}
+
+.background-lightgradient {
+  background: linear-gradient(270deg, #E9DEFA 0%, rgba(251, 252, 219, 0.8) 100%);
+}
+
+.font-darkblue {
+  color: #000048;
+}
+
+.background-darkblue {
+  background: #000048;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+}/*# sourceMappingURL=style.css.map */
