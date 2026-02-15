@@ -141,6 +141,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+a {
+  text-decoration: none;
+}
+
 .custom-container {
   width: 80%;
   margin: 0 auto;
@@ -160,7 +164,16 @@ header .top-header {
 header .top-header a {
   color: #fff;
 }
-header .header-social a .bi {
-  font-size: 22px;
-  color: #fff;
+header .header-social a {
+  background: #fff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+header .header-social a .icomoon {
+  font-size: 18px;
+  color: #282828;
 }/*# sourceMappingURL=style.css.map */
