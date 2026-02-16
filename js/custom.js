@@ -1,15 +1,44 @@
 
-//top header swiper offer
- var swiper = new Swiper(".mySwiper-offer", {
-      spaceBetween: 50,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
+     var swiper = new Swiper(".mySwiper-hero", {
+      slidesPerView: 1,
+      spaceBetween: 2,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".hero-swiper-next",
+        prevEl: ".hero-swiper-prev",
+      },
+      loop: true,
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 15,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
       },
     });
-    var swiper2 = new Swiper(".mySwiper2", {
-      direction: "horizontal",
-      spaceBetween: 50,
+
+
+    var swiper = new Swiper(".mySwiper-hero-right", {
+      spaceBetween: 30,
+       autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      effect: "fade",
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
       pagination: {
         el: ".swiper-pagination",
         clickable: true,

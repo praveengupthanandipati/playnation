@@ -9,11 +9,11 @@
   font-weight: 400;
 }
 
-.font-semibold {
+.font-semibold, header .nav-item .nav-link {
   font-weight: 600;
 }
 
-.font-bold {
+.font-bold, .hero-section h1 {
   font-weight: 700;
 }
 
@@ -50,27 +50,27 @@
 }
 
 .font-darkprimary {
-  color: #380100;
+  color: #a70d1f;
 }
 
 .background-darkprimary {
-  background: #380100;
+  background: #a70d1f;
 }
 
 .font-primary {
-  color: #460100;
+  color: #D9273D;
 }
 
 .background-primary {
-  background: #460100;
+  background: #D9273D;
 }
 
 .font-lightprimary {
-  color: #831c1a;
+  color: #f84459;
 }
 
 .background-lightprimary {
-  background: #831c1a;
+  background: #f84459;
 }
 
 .font-secondary {
@@ -95,6 +95,30 @@
 
 .background-darksecondary {
   background: #c44800;
+}
+
+.font-thirdcolour {
+  color: #39AEEE;
+}
+
+.background-thirdcolour {
+  background: #39AEEE;
+}
+
+.font-lightthrdcolour {
+  color: #66c2f3;
+}
+
+.background-lightthrdcolour {
+  background: #66c2f3;
+}
+
+.font-darkbluecolour {
+  color: #188fcf;
+}
+
+.background-darkbluecolour {
+  background: #188fcf;
 }
 
 .font-lightgray {
@@ -146,13 +170,59 @@ a {
 }
 
 .custom-container {
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
 }
 @media (min-width: 576px) and (max-width: 996px) {
   .custom-container {
     width: 90%;
   }
+}
+
+.default-btn, .orange-btn, .primary-btn, .border-btn {
+  padding: 16px 26px !important;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.border-btn {
+  border: 1px solid #282828;
+}
+.border-btn:hover {
+  background: #282828;
+  color: #fff !important;
+  border: 1px solid transparent;
+}
+
+.primary-btn {
+  background: #D9273D;
+  color: #fff !important;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.primary-btn:hover {
+  background: #a70d1f;
+  color: #fff !important;
+}
+
+.orange-btn {
+  background: #EB7533;
+  color: #282828 !important;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.orange-btn:hover {
+  background: #c44800;
+  color: #282828 !important;
 }
 
 header .top-header {
@@ -176,4 +246,83 @@ header .header-social a {
 header .header-social a .icomoon {
   font-size: 18px;
   color: #282828;
+}
+header .mainav .navbar-brand img {
+  width: 200px;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+header .nav-item .nav-link:hover {
+  color: #D9273D !important;
+}
+
+.hero-section {
+  background: linear-gradient(70deg, rgba(205, 220, 255, 0.5) 0%, rgba(255, 189, 191, 0.5) 100%);
+  height: 100vh;
+  padding-top: 12%;
+}
+.hero-section h1 {
+  font-size: clamp(2rem, 6.3vw, 6.3rem);
+}
+.hero-section h1 span {
+  color: #39AEEE;
+}
+.hero-section article {
+  padding-left: 40%;
+}
+.hero-section article p {
+  font-size: clamp(1rem, 1.1vw, 1.1rem);
+}
+
+.hero-swiper {
+  margin-top: 3rem;
+}
+.hero-swiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hero-right-swiper {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40%;
+  height: auto;
+}
+.hero-right-swiper:before {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  right: 50px;
+  background: blue;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 500px;
+  border-top-right-radius: 500px;
+  border-bottom-left-radius: 500px;
+}
+.hero-right-swiper swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+.hero-right-swiper .swiper-slide img {
+  display: block;
+  width: 90% !important;
+  border-top-left-radius: 500px;
+  border-top-right-radius: 500px;
+  border-bottom-left-radius: 500px;
 }/*# sourceMappingURL=style.css.map */

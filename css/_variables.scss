@@ -4,12 +4,15 @@ $colors: (
   white: #fff,
   red: #aa0607,
   gray: #828282,
-  darkprimary: #380100,
-  primary: #460100,
-  lightprimary: #831c1a,
+  darkprimary: #a70d1f,
+  primary: #D9273D,
+  lightprimary: #f84459,
   secondary: #EB7533,
   lightsecondary: #f0945e,
   darksecondary: #c44800,
+  thirdcolour:#39AEEE,
+  lightthrdcolour:#66c2f3,
+  darkbluecolour:#188fcf,
   lightgray: #e7eefa,
   lightgradient: (
     linear-gradient(270deg, #E9DEFA 0%, rgba(251, 252, 219, 0.8) 100%),
@@ -51,3 +54,4 @@ $font-weights: (
     background: $color-value;
   }
 }
+

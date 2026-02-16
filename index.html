@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/swiper.min.css" />
     <link rel="stylesheet" href="css/aos.css" />
-    <link rel="stylesheet" href="css/fonts.css"/>
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/bsnav.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/uicons-brands.css" />
     <link
@@ -31,7 +32,6 @@
         <div class="custom-container">
           <div class="row">
             <div class="col-md-10 align-self-center">
-              
               <div class="d-flex">
                 <p>
                   <i class="fi fi-rs-map-marker"></i> 123 Fun Street, Charlotte,
@@ -46,24 +46,162 @@
                   <i class="fi fi-rs-call-incoming"></i>
                   <a href="callto:(555) 123-456">(555) 123-456</a>
                 </p>
-              </div>              
-             
+              </div>
             </div>
             <div class="col-md-2 text-end">
-               <div class="d-flex header-social justify-content-end gap-2">
-                  <a href="javascript:void(0)" target="_blank"><span class="icon-facebook icomoon"></span></a>
-                  <a href="javascript:void(0)" target="_blank"><span class="icon-linkedin2 icomoon"></span></a>
-               </div>
+              <div class="d-flex header-social justify-content-end gap-2">
+                <a href="javascript:void(0)" target="_blank"
+                  ><span class="icon-facebook icomoon"></span
+                ></a>
+                <a href="javascript:void(0)" target="_blank"
+                  ><span class="icon-linkedin2 icomoon"></span
+                ></a>
+              </div>
             </div>
-           
           </div>
         </div>
       </section>
+      <!-- main nav-->
+      <div class="mainav">
+        <div class="custom-container">
+          <div class="navbar navbar-expand-lg bsnav bg-transparent">
+            <a class="navbar-brand" href="#">
+              <img src="img/logo.svg" alt="" />
+            </a>
+            <button class="navbar-toggler toggler-spring">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-md-center">
+              <ul class="navbar-nav navbar-mobile mx-md-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">The Playground</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing & Hours</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Parties</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Plan Your Visit</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Safety</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav navbar-mobile ms-auto">
+                <li class="nav-item">
+                  <a class="border-btn text-black font-semibold" href="#"
+                    >Contact <span class="icon-arrow-right2"></span
+                  ></a>
+                </li>
+                <li class="nav-item ms-3">
+                  <a class="primary-btn font-semibold" href="#"
+                    >Book a Party <span class="icon-arrow-right2"></span
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="bsnav-mobile">
+            <div class="bsnav-mobile-overlay"></div>
+            <div class="navbar"></div>
+          </div>
+        </div>
+      </div>
     </header>
     <!--/ header-->
 
     <!-- main-->
-    <main></main>
+    <main>
+      <!-- hero section -->
+      <section class="hero-section position-relative">
+        <div class="custom-container">
+          <div class="row">
+            <div class="col-lg-6">
+              <h1 class="text-uppercase">
+                <span>LUXURY</span> INDOOR <br />
+                PLAY EXPERIENCE
+              </h1>
+              <article>
+                <p>
+                  The ultimate indoor playground designed for kids ages 0-13.
+                  Climb, jump, explore, and create unforgettable memories in our
+                  climate-controlled wonderland.
+                </p>
+                <a
+                  href="javascript:void(0)"
+                  class="orange-btn d-inline-block mt-3"
+                  >Explore Play Zones <span class="icon-arrow-right2"></span
+                ></a>
+              </article>
+
+              <div class="hero-swiper overflow-hidden">
+                <!-- Swiper -->
+                <div class="swiper mySwiper-hero">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="img/herocarousel-img01.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/herocarousel-img02.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/herocarousel-img03.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/herocarousel-img01.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/herocarousel-img02.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/herocarousel-img03.jpg" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--/ swiper -->
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right-swiper">
+          <div class="swiper mySwiper-hero-right">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="img/hero-right-carousel-img01.jpg"
+                  class="img-fluid w-100"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="img/hero-right-carousel-img01.jpg"                 
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="img/hero-right-carousel-img02.jpg"                 
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="img/hero-right-carousel-img03.jpg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--/ Hero Section -->
+    </main>
     <!--/ main-->
 
     <!-- footer-->
@@ -78,6 +216,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/aos.js"></script>
+    <script src="js/bsnav.min.js"></script>
     <script src="js/custom.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper-offer", {});
