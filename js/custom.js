@@ -1,3 +1,11 @@
+// Custom Marquee JS for immediate repeat and pause on hover
+document.addEventListener('DOMContentLoaded', function() {
+  var marquee = document.querySelector('.custom-marquee');
+  if (marquee) {
+    // Duplicate content for seamless loop
+    marquee.innerHTML += marquee.innerHTML;
+  }
+});
 
      var swiper = new Swiper(".mySwiper-hero", {
       slidesPerView: 1,

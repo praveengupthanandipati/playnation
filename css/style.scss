@@ -167,15 +167,15 @@ header{
 
   &:before{
     content:'';
-    position:absolute;
-    bottom:10px;
-    right:50px;
-    background:blue;
-    width:100%;
-    height:100%;
-     border-top-left-radius: 500px;
-      border-top-right-radius: 500px;
-      border-bottom-left-radius: 500px;
+    position: absolute;
+    bottom: 35px;
+    right: 81px;
+    background: map-get($colors, thirdcolour);
+    width: 98%;
+    height: 98%;
+    border-top-left-radius: 500px;
+    border-top-right-radius: 500px;
+    border-bottom-left-radius: 440px;
   }
 
 
@@ -192,7 +192,50 @@ header{
       border-top-right-radius: 500px;
       border-bottom-left-radius: 500px;
     }
+}
 
+.marquee-section{
+  padding:3rem 0;
+
+  h6{
+    font-size:clamp(1rem, 6.2vw, 6.2rem);
+    @extend .font-semibold;
+    position: relative;
+    padding-left:3rem;
+    color:map-get($colors, thirdcolour);
+
+    &:before{
+      content:'';
+      position: absolute;
+      top: 30%;
+      left: -30px;      
+      width:64px;
+      height: 64px;
+     background:url(../img/sparkles2.png)
+    }
+  }
+  // Custom Marquee Styles
+.custom-marquee-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.custom-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 40s linear infinite;
+}
+.custom-marquee:hover {
+  animation-play-state: paused;
+}
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 }
 
  
