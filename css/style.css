@@ -9,11 +9,11 @@
   font-weight: 400;
 }
 
-.font-semibold, .marquee-section h6, header .nav-item .nav-link {
+.font-semibold, .section-title p, .marquee-section h6, header .nav-item .nav-link {
   font-weight: 600;
 }
 
-.font-bold, .hero-section h1 {
+.font-bold, .section-title h2, .hero-section h1 {
   font-weight: 700;
 }
 
@@ -160,7 +160,12 @@ body p {
   padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
 }
@@ -226,10 +231,15 @@ a {
 }
 
 header .top-header {
-  background: linear-gradient(270deg, #F3AE3D 0%, #D9273D 100%);
+  background: linear-gradient(270deg, #f3ae3d 0%, #d9273d 100%);
   color: #fff;
-  padding: 15px 0;
+  padding: 0.5rem 0;
   font-size: 14px;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
 }
 header .top-header a {
   color: #fff;
@@ -247,7 +257,10 @@ header .header-social a .icomoon {
   font-size: 18px;
   color: #282828;
 }
-header .mainav .navbar-brand img {
+header .mainnav {
+  position: relative;
+}
+header .mainnav .navbar-brand img {
   width: 200px;
   transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -259,8 +272,26 @@ header .nav-item .nav-link:hover {
   color: #D9273D !important;
 }
 
+.fixed-top-nav .top-header {
+  position: relative;
+  top: -57px;
+  padding: 0;
+  height: 0;
+}
+.fixed-top-nav .mainnav {
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0;
+}
+.fixed-top-nav .mainnav .navbar-brand img {
+  width: 150px;
+}
+
 .hero-section {
-  background: linear-gradient(70deg, rgba(205, 220, 255, 0.5) 0%, rgba(255, 189, 191, 0.5) 100%);
+  background: linear-gradient(70deg, rgba(205, 220, 255, 0.5019607843) 0%, rgba(255, 189, 191, 0.5019607843) 100%);
   height: 100vh;
   padding-top: 12%;
 }
@@ -329,6 +360,13 @@ header .nav-item .nav-link:hover {
 
 .marquee-section {
   padding: 3rem 0;
+  background: linear-gradient(70deg, rgba(233, 222, 250, 0.5019607843) 0%, rgba(251, 252, 219, 0.5019607843) 100%);
+  position: relative;
+}
+.marquee-section .zoneicon01 {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
 }
 .marquee-section h6 {
   font-size: clamp(1rem, 6.2vw, 6.2rem);
@@ -366,4 +404,19 @@ header .nav-item .nav-link:hover {
   100% {
     transform: translateX(-50%);
   }
+}
+
+.section-title {
+  padding: 5rem 0;
+}
+.section-title p {
+  font-size: clamp(0.8rem, 1.1vw, 1.1rem);
+  color: #39AEEE;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.section-title h2 {
+  font-size: clamp(1.5rem, 3.5vw, 3.5rem);
+  text-transform: uppercase;
+  color: #282828;
 }/*# sourceMappingURL=style.css.map */

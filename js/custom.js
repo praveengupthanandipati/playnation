@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
 $(function () {
   const $header = $(".fixed-top");
   function toggleHeaderClass() {
-    if ($(window).scrollTop() > 50) {
+    if ($(window).scrollTop() > 10) {
       $header.addClass("fixed-top-nav");
     } else {
       $header.removeClass("fixed-top-nav");
