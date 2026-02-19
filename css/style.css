@@ -360,8 +360,8 @@ header .nav-item .nav-link:hover {
 
 .marquee-section {
   padding: 3rem 0;
-  background: linear-gradient(70deg, rgba(233, 222, 250, 0.5019607843) 0%, rgba(251, 252, 219, 0.5019607843) 100%);
   position: relative;
+  background: #fff;
 }
 .marquee-section .zoneicon01 {
   position: absolute;
@@ -406,12 +406,8 @@ header .nav-item .nav-link:hover {
   }
 }
 
-.section-title {
-  padding: 5rem 0;
-}
 .section-title p {
   font-size: clamp(0.8rem, 1.1vw, 1.1rem);
-  color: #39AEEE;
   letter-spacing: 3px;
   text-transform: uppercase;
 }
@@ -419,4 +415,56 @@ header .nav-item .nav-link:hover {
   font-size: clamp(1.5rem, 3.5vw, 3.5rem);
   text-transform: uppercase;
   color: #282828;
+}
+
+.zone-section .zone-col article {
+  padding-right: 3rem;
+}
+.zone-section .zone-col article .age-label {
+  padding: 5px 15px;
+  background: #fff;
+  color: #282828;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.zone-section .zone-col article .desc {
+  padding: 1.5rem 3.8rem 1.5rem 1.5rem;
+  position: relative;
+  color: #fff;
+}
+.zone-section .zone-col article .desc p {
+  font-size: 15px;
+}
+.zone-section .zone-col article .desc .icomoon {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background: #fff;
+  color: #39AEEE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 100px;
+}
+
+.who-we-are-home-section {
+  background: linear-gradient(140deg, rgba(227, 238, 255, 0.5019607843) 100% rgba(243, 231, 233, 0.5019607843) 0%);
+  padding: 6rem 0;
+}
+.who-we-are-home-section .right-col {
+  background: url(../img/whovr-bg.png) no-repeat center;
+  background-size: cover;
+}
+.who-we-are-home-section .whovr01icon {
+  width: 150px;
+  top: 2%;
+  right: 1%;
+}
+.who-we-are-home-section .whovr02icon {
+  width: 150px;
+  bottom: 2%;
+  right: 1%;
 }/*# sourceMappingURL=style.css.map */

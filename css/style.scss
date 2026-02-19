@@ -223,12 +223,13 @@ header {
 
 .marquee-section {
   padding: 3rem 0;
-    @include linear-gradient(
-    70deg,
-    #e9defa80 0%,
-    #fbfcdb80 100%
-  );
+  //   @include linear-gradient(
+  //   70deg,
+  //   #e9defa10 0%,
+  //   #fbfcdb10 100%
+  // );
   position: relative;
+  background:map-get($colors, white);
 
   .zoneicon01{
     position: absolute;
@@ -277,11 +278,9 @@ header {
   }
 }
 
-.section-title{
-  padding:5rem 0;
+.section-title{  
   p{
-    font-size:clamp(0.8rem, 1.1vw, 1.1rem);
-    color: map-get($colors, thirdcolour);
+    font-size:clamp(0.8rem, 1.1vw, 1.1rem);   
     letter-spacing: 3px;
     @extend .font-semibold;
     text-transform: uppercase;
@@ -291,6 +290,72 @@ header {
     @extend .font-bold;
     text-transform: uppercase;
     color:map-get($colors, black);    
+  }
+}
+
+.zone-section{
+  .zone-col{
+    article{
+      padding-right:3rem;
+      .age-label{
+        padding:5px 15px;
+        background:map-get($colors, white);
+        color:map-get($colors, black);
+        border-radius:25px;
+        font-size:$fsize - 2px;
+        font-weight: map-get($font-weights, semibold);
+      }
+      .desc{
+        padding:1.5rem 3.8rem 1.5rem 1.5rem;
+        position:relative;
+        color:map-get($colors, white);
+
+        p{
+          font-size:$fsize - 1px;
+        }
+
+        .icomoon{
+          width:40px;
+          height: 40px;
+          display: inline-block;
+          background: map-get($colors, white);
+          color: map-get($colors, thirdcolour);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          right:10px;
+          bottom:10px;
+          border-radius:100px;
+        }
+      }
+    }
+  }
+}
+
+.who-we-are-home-section{
+   @include linear-gradient(
+    140deg,
+    #E3EEFF80 100%
+    #F3E7E980 0%,
+    
+  );
+  padding:6rem 0;
+
+  .right-col{
+    background:url(../img/whovr-bg.png)no-repeat center;
+    background-size: cover;
+  }
+
+  .whovr01icon{
+    width:150px;
+    top:2%;
+    right:1%;
+  }
+  .whovr02icon{
+    width:150px;
+    bottom:2%;
+    right:1%;
+    
   }
 }
 
