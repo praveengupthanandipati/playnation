@@ -9,7 +9,7 @@
   font-weight: 400;
 }
 
-.font-semibold, .section-title p, .marquee-section h6, header .nav-item .nav-link {
+.font-semibold, .section-title p.subtext, .marquee-section h6, header .nav-item .nav-link {
   font-weight: 600;
 }
 
@@ -406,7 +406,7 @@ header .nav-item .nav-link:hover {
   }
 }
 
-.section-title p {
+.section-title p.subtext {
   font-size: clamp(0.8rem, 1.1vw, 1.1rem);
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -451,7 +451,7 @@ header .nav-item .nav-link:hover {
 }
 
 .who-we-are-home-section {
-  background: linear-gradient(140deg, rgba(227, 238, 255, 0.5019607843) 100% rgba(243, 231, 233, 0.5019607843) 0%);
+  background: linear-gradient(70deg, #E3EEFF 0%, #F3E7E9 50%);
   padding: 6rem 0;
 }
 .who-we-are-home-section .right-col {
@@ -467,4 +467,69 @@ header .nav-item .nav-link:hover {
   width: 150px;
   bottom: 2%;
   right: 1%;
+}
+
+.safety-section {
+  background: #fff;
+  padding-bottom: 6rem;
+}
+.safety-section .safety-col {
+  position: relative;
+}
+.safety-section .safety-col .number {
+  font-size: clamp(1.5rem, 6vw, 6rem);
+  font-weight: 600;
+  color: #F2F2F2;
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 25%;
+  left: -20px;
+  transform: translateY(-50%) rotate(-90deg);
+}
+.safety-section .safety-col figure {
+  background: #fff;
+  width: 86px;
+  height: 86px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.safety-section .safety-col figure .icomoon {
+  font-size: 41px;
+  color: #282828;
+}
+
+.birthday-celebrations-section {
+  background: #39AEEE url(../img/celebrations-bg.png) no-repeat center top;
+  padding: 12rem 0 6rem 0;
+  position: relative !important;
+}
+.birthday-celebrations-section .birthday-rt-col {
+  padding: 1rem 0;
+}
+.birthday-celebrations-section .birthday-rt-col figure {
+  background: #EB7533;
+  width: 67px;
+  height: 67px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  padding: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.birthday-celebrations-section .birthday-rt-col figure .icomoon {
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  color: #282828;
 }/*# sourceMappingURL=style.css.map */
