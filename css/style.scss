@@ -518,3 +518,46 @@ header {
   }
 }
 
+footer{
+  background:map-get($colors, black);
+  padding:82px 0  40px 0;
+  color:map-get($colors, white);
+
+  .header-social {
+    a {
+      background: map-get($colors, white);
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      .icomoon {
+        font-size: $fsize + 2px;
+        color: map-get($colors, black);
+      }
+    }
+  }
+
+    .footer-links{
+     ul{
+      list-style: none;
+      padding: 20px 0 0 0;
+      margin: 0;
+      li{
+        padding: 5px 0;
+         a{
+          color: map-get($colors, white);
+          font-size: $fsize - 1px;
+          @include transition(all, 0.3s, ease);
+
+          &:hover{
+            color: map-get($colors, secondary);
+          }
+        }
+     }
+  }
+}
+
+}
+
