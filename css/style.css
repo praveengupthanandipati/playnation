@@ -451,7 +451,7 @@ header .nav-item .nav-link:hover {
 }
 
 .who-we-are-home-section {
-  background: linear-gradient(70deg, #E3EEFF 0%, #F3E7E9 50%);
+  background: linear-gradient(70deg, #e3eeff 0%, #f3e7e9 50%);
   padding: 6rem 0;
 }
 .who-we-are-home-section .right-col {
@@ -479,7 +479,7 @@ header .nav-item .nav-link:hover {
 .safety-section .safety-col .number {
   font-size: clamp(1.5rem, 6vw, 6rem);
   font-weight: 600;
-  color: #F2F2F2;
+  color: #f2f2f2;
   transform: rotate(-90deg);
   position: absolute;
   top: 25%;
@@ -507,7 +507,7 @@ header .nav-item .nav-link:hover {
 }
 
 .birthday-celebrations-section {
-  background: #39AEEE url(../img/celebrations-bg.png) no-repeat center top;
+  background: #39aeee url(../img/celebrations-bg.png) no-repeat center top;
   padding: 12rem 0 6rem 0;
   position: relative !important;
 }
@@ -532,4 +532,108 @@ header .nav-item .nav-link:hover {
 .birthday-celebrations-section .birthday-rt-col figure .icomoon {
   font-size: clamp(1.5rem, 2vw, 2rem);
   color: #282828;
+}
+
+.pricing-section {
+  padding: 6rem 0;
+}
+.pricing-section .price-col {
+  background: url(../img/pricing-offer-bg.png) no-repeat center;
+  background-size: cover;
+  height: 342px;
+  width: 100%;
+  padding: 0 72px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.pricing-section .price-col .left-price-col {
+  border-right: 1px dashed #828282;
+}
+.pricing-section .price-col ul {
+  list-style: none;
+  padding: 25px 0 0 0;
+  margin: 0;
+}
+.pricing-section .price-col ul li {
+  font-size: 15px;
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 10px;
+  border-left: 1px solid gray;
+}
+
+.home-testimonials {
+  padding: 6rem 0;
+  background-image: linear-gradient(140deg, rgba(57, 174, 238, 0.2509803922) 25%, rgba(217, 39, 61, 0.2509803922) 50%), url(../img/testimonials-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.home-testimonials .swiper-wrapper {
+  padding: 1rem 0 3rem 0;
+}
+.home-testimonials .swiper-wrapper .swiper-slide {
+  background: #fff;
+  padding: 4rem;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
+  text-align: left !important;
+}
+.home-testimonials .swiper-wrapper .swiper-slide .quote-icon {
+  position: absolute;
+  top: 15%;
+  right: 5%;
+  width: 50px;
+}
+.home-testimonials .swiper-wrapper .swiper-slide .test-user .test-user-img {
+  width: 70px;
+  border-radius: 50%;
+  margin-right: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 3px solid #fff;
+}
+.home-testimonials .swiper-wrapper .swiper-slide .test-user .test-name {
+  font-size: 20.8px;
+  font-weight: 600;
+  color: #282828;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-container .swiper-pagination-bullet {
+  border-radius: 0;
+  background: #fff;
+  opacity: 1;
+  width: 30px;
+  height: 3px;
+}
+.swiper-container .swiper-pagination-bullet-active {
+  background: #EB7533;
+}
+
+.reachus-home {
+  padding: 6rem 0;
+  position: relative;
+}
+.reachus-home .reachicon01 {
+  width: 199px;
+  position: absolute;
+  top: 5%;
+  right: 2%;
+}
+.reachus-home .reachicon02 {
+  width: 199px;
+  position: absolute;
+  bottom: 5%;
+  left: 2%;
 }/*# sourceMappingURL=style.css.map */

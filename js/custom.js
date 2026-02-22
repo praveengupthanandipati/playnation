@@ -1,3 +1,30 @@
+ var swiper = new Swiper('.swiper-testimonials-home', {
+      slidesPerView: 1,
+      spaceBetween: 10,
+	   autoplay: {
+        delay: 5000,
+        disableOnInteraction: true,
+      },
+      // init: false,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+      }
+    });
 // Custom Marquee JS for immediate repeat and pause on hover
 document.addEventListener('DOMContentLoaded', function() {
   var marquee = document.querySelector('.custom-marquee');
