@@ -95,14 +95,55 @@ $(function () {
   $(window).on('scroll', toggleHeaderClass);
   toggleHeaderClass(); // Run on page load
   
-  // Initialize AOS
+  // Initialize AOS with premium settings
   if (typeof AOS !== 'undefined') {
     AOS.init({
-      duration: 1000,
+      duration: 900,
       once: true,
-      offset: 100
+      offset: 80,
+      easing: 'ease-out-cubic',
+      anchorPlacement: 'top-bottom',
+      disable: false
     });
   }
+
+  // Scroll-triggered number counter animation
+  function animateCounters() {
+    var counters = document.querySelectorAll('.safety-col .number');
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          var el = entry.target;
+          var target = parseInt(el.textContent);
+          var count = 0;
+          var increment = 1;
+          var timer = setInterval(function() {
+            count += increment;
+            el.textContent = count < 10 ? '0' + count : count;
+            if (count >= target) {
+              clearInterval(timer);
+              el.textContent = target < 10 ? '0' + target : target;
+            }
+          }, 150);
+          observer.unobserve(el);
+        }
+      });
+    }, { threshold: 0.5 });
+    counters.forEach(function(counter) {
+      observer.observe(counter);
+    });
+  }
+  animateCounters();
+
+  // Subtle parallax for decorative icons on scroll
+  $(window).on('scroll', function() {
+    var scrollTop = $(window).scrollTop();
+    $('.whovr01icon').css('transform', 'translateY(' + (scrollTop * 0.04) + 'px)');
+    $('.whovr02icon').css('transform', 'translateY(' + (scrollTop * -0.03) + 'px)');
+    $('.reachicon01').css('transform', 'translateY(' + (scrollTop * 0.05) + 'px) rotate(' + (scrollTop * 0.02) + 'deg)');
+    $('.reachicon02').css('transform', 'translateY(' + (scrollTop * -0.04) + 'px) rotate(' + (scrollTop * -0.015) + 'deg)');
+    $('.zoneicon01').css('transform', 'translateY(' + (scrollTop * 0.03) + 'px)');
+  });
 });
 // Only handle mobile: remove styles on resize to mobile
 $(function () {

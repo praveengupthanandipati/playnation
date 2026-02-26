@@ -1136,5 +1136,38 @@ footer {
         max-width: 50%;
       }
     }
-  }
+  }  
 }
+
+.movetop {
+    background: map-get($colors, primary);
+    color: map-get($colors, primary);
+    text-align: center;
+    line-height: 30px;
+    position: fixed;
+    border: 1px solid transparent;
+    padding: 8px;
+    position: fixed;
+    right: 1%;
+    bottom: 50px;
+    z-index: 9999;
+    width: 45px;
+    height: 45px;
+    @include transition(all, 0.2s, ease);
+    display: none;
+
+    &:hover {
+      background-color: map-get($colors, darksecondary);
+      color: map-get($colors, rgb(17, 5, 5));
+      text-decoration: none;
+
+      i {
+        color: map-get($colors, white);
+      }
+    }
+
+    i {
+      font-size: $fsize + 5;
+      color: map-get($colors, white);
+    }
+  }

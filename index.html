@@ -1,846 +1,766 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Playnation</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="img/fav.png" />
 
-    <!-- styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/swiper.min.css" />
-    <link rel="stylesheet" href="css/aos.css" />
-    <link rel="stylesheet" href="css/fonts.css" />
-    <link rel="stylesheet" href="css/bsnav.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/uicons-brands.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/3.0.0/uicons-thin-straight/css/uicons-thin-straight.css"
-    />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Playnation</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="img/fav.png" />
 
-  <body>
-    <!-- header-->
-    <header class="fixed-top">
-      <!-- top header -->
-      <section class="top-header d-none d-md-block">
-        <div class="custom-container">
-          <div class="row">
-            <div class="col-md-10 align-self-center">
-              <div class="d-flex">
-                <p>
-                  <i class="fi fi-rs-map-marker"></i> 123 Fun Street, Charlotte,
-                  NC 28202,
-                  <a
-                    href="https://maps.app.goo.gl/tsbW4Ya1ePuGJ6HeA"
-                    target="_blank"
-                    >Get Directions</a
-                  >
-                </p>
-                <p class="ps-3 ms-3 border-start">
-                  <i class="fi fi-rs-call-incoming"></i>
-                  <a href="callto:(555) 123-456">(555) 123-456</a>
-                </p>
-              </div>
-            </div>
-            <div class="col-md-2 text-end">
-              <div class="d-flex header-social justify-content-end gap-2">
-                <a href="javascript:void(0)" target="_blank"
-                  ><span class="icon-facebook icomoon"></span
-                ></a>
-                <a href="javascript:void(0)" target="_blank"
-                  ><span class="icon-linkedin2 icomoon"></span
-                ></a>
-              </div>
+  <!-- styles -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/swiper.min.css" />
+  <link rel="stylesheet" href="css/aos.css" />
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/bsnav.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/uicons-brands.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet"
+    href="https://cdn-uicons.flaticon.com/3.0.0/uicons-thin-straight/css/uicons-thin-straight.css" />
+</head>
+
+<body>
+  <!-- header-->
+  <header class="fixed-top">
+    <!-- top header -->
+    <section class="top-header d-none d-md-block">
+      <div class="custom-container">
+        <div class="row">
+          <div class="col-md-10 align-self-center">
+            <div class="d-flex">
+              <p>
+                <i class="fi fi-rs-map-marker"></i> 123 Fun Street, Charlotte,
+                NC 28202,
+                <a href="https://maps.app.goo.gl/tsbW4Ya1ePuGJ6HeA" target="_blank">Get Directions</a>
+              </p>
+              <p class="ps-3 ms-3 border-start">
+                <i class="fi fi-rs-call-incoming"></i>
+                <a href="callto:(555) 123-456">(555) 123-456</a>
+              </p>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- main nav-->
-      <div class="mainnav">
-        <div class="custom-container">
-          <div class="navbar navbar-expand-xxl bsnav bg-transparent">
-            <a class="navbar-brand" href="#">
-              <img src="img/logo.svg" alt="" />
-            </a>
-            <button class="navbar-toggler toggler-spring">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-md-center">
-              <ul class="navbar-nav navbar-mobile mx-md-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">The Playground</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing & Hours</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Parties</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Plan Your Visit</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Safety</a>
-                </li>
-              </ul>
-              <ul class="navbar-nav navbar-mobile ms-auto gap-2">
-              
-                  <a class="border-btn text-black font-semibold" href="#"
-                    >Contact <span class="icon-arrow-right2"></span
-                  ></a>
-               
-              
-                  <a class="primary-btn font-semibold" href="#"
-                    >Book a Party <span class="icon-arrow-right2"></span
-                  ></a>
-               
-              </ul>
+          <div class="col-md-2 text-end">
+            <div class="d-flex header-social justify-content-end gap-2">
+              <a href="javascript:void(0)" target="_blank"><span class="icon-facebook icomoon"></span></a>
+              <a href="javascript:void(0)" target="_blank"><span class="icon-linkedin2 icomoon"></span></a>
             </div>
-          </div>
-          <div class="bsnav-mobile">
-            <div class="bsnav-mobile-overlay"></div>
-            <div class="navbar"></div>
           </div>
         </div>
       </div>
-    </header>
-    <!--/ header-->
+    </section>
+    <!-- main nav-->
+    <div class="mainnav">
+      <div class="custom-container">
+        <div class="navbar navbar-expand-xxl bsnav bg-transparent">
+          <a class="navbar-brand" href="#">
+            <img src="img/logo.svg" alt="" />
+          </a>
+          <button class="navbar-toggler toggler-spring">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-md-center">
+            <ul class="navbar-nav navbar-mobile mx-md-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">The Playground</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing & Hours</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Parties</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Plan Your Visit</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Safety</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav navbar-mobile ms-auto gap-2">
 
-    <!-- main-->
-    <main>
-      <!-- hero section -->
-      <section class="hero-section position-relative">
-        <div class="custom-container">
-          <div class="row">
-            <div class="col-lg-6">
-              <h1 class="text-uppercase">
-                <span>LUXURY</span> INDOOR <br />
-                PLAY EXPERIENCE
-              </h1>
-              <article>
-                <p>
-                  The ultimate indoor playground designed for kids ages 0-13.
-                  Climb, jump, explore, and create unforgettable memories in our
-                  climate-controlled wonderland.
-                </p>
-                <a
-                  href="javascript:void(0) "
-                  class="orange-btn d-inline-block mt-3"
-                  >Explore Play Zones <span class="icon-arrow-right2"></span
-                ></a>
-              </article>
+              <a class="border-btn text-black font-semibold" href="#">Contact <span
+                  class="icon-arrow-right2"></span></a>
 
-              <div class="hero-swiper overflow-hidden">
-                <!-- Swiper -->
-                <div class="swiper mySwiper-hero">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <img src="img/herocarousel-img01.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="img/herocarousel-img02.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="img/herocarousel-img03.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="img/herocarousel-img01.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="img/herocarousel-img02.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="img/herocarousel-img03.jpg" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--/ swiper -->
-            </div>
+
+              <a class="primary-btn font-semibold" href="#">Book a Party <span class="icon-arrow-right2"></span></a>
+
+            </ul>
           </div>
         </div>
-
-        <div class="hero-right-swiper d-none d-lg-block">
-          <div class="swiper mySwiper-hero-right">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img
-                  src="img/hero-right-carousel-img01.jpg"
-                  class="img-fluid w-100"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img src="img/hero-right-carousel-img01.jpg" />
-              </div>
-              <div class="swiper-slide">
-                <img src="img/hero-right-carousel-img02.jpg" />
-              </div>
-              <div class="swiper-slide">
-                <img src="img/hero-right-carousel-img03.jpg" />
-              </div>
-            </div>
-          </div>
+        <div class="bsnav-mobile">
+          <div class="bsnav-mobile-overlay"></div>
+          <div class="navbar"></div>
         </div>
-      </section>
-      <!--/ Hero Section -->
+      </div>
+    </div>
+  </header>
+  <!--/ header-->
 
-      <!-- marquee-->
-      <section class="marquee-section">
-        <img src="img/zoneimg01.png" alt="" class="zoneicon01" />
-        <div class="custom-marquee-wrapper">
-          <div class="custom-marquee d-flex gap-5">
-            <h6 class="mb-0">SOFT PLAY AREA</h6>
-            <h6 class="mb-0">BALL PIT</h6>
-            <h6 class="mb-0">BABY SWINGS</h6>
-            <h6 class="mb-0">SOFT PLAY AREA</h6>
-            <h6 class="mb-0">BALL PIT</h6>
-            <h6 class="mb-0">BABY SWINGS</h6>
-          </div>
-        </div>
-
-        <!-- zones section-->
-        <div class="zone-section position-relative">
-          <div class="custom-container">
-            <div class="section-title text-center py-5">
-              <p class="font-thirdcolour subtext">[THE PLAY GROUND]</p>
-              <h2>THREE AMAZING AGE ZONES</h2>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="zone-col position-relative">
-                  <figure>
-                    <img src="img/zone-home01.jpg" alt="" class="img-fluid" />
-                  </figure>
-                  <article
-                    class="position-absolute top-0 h-100 p-3 d-flex align-items-start flex-column justify-content-between"
-                  >
-                    <span class="age-label">Age 0-3</span>
-                    <a
-                      href="javascript:void(0)"
-                      class="desc background-thirdcolour"
-                    >
-                      <h4 class="text-uppercase font-semibold">
-                        MINI KIDS ZONE
-                      </h4>
-                      <p>
-                        A safe, soft environment designed specifically for our
-                        youngest explorers. Padded play structures, sensory
-                        activities, and crawl spaces.
-                      </p>
-                      <span
-                        class="icon-arrow-right2 icomoon position-absolute"
-                      ></span>
-                    </a>
-                  </article>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="zone-col position-relative">
-                  <figure>
-                    <img src="img/zone-home02.jpg" alt="" class="img-fluid" />
-                  </figure>
-                  <article
-                    class="position-absolute top-0 h-100 p-3 d-flex align-items-start flex-column justify-content-between"
-                  >
-                    <span class="age-label">Age 3-6</span>
-                    <a
-                      href="javascript:void(0)"
-                      class="desc background-thirdcolour"
-                    >
-                      <h4 class="text-uppercase font-semibold">KIDS ZONE</h4>
-                      <p>
-                        Interactive play structures, climbing walls, slides, and
-                        imaginative play areas that encourage creativity and
-                        physical activity.
-                      </p>
-                      <span
-                        class="icon-arrow-right2 icomoon position-absolute"
-                      ></span>
-                    </a>
-                  </article>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="zone-col position-relative">
-                  <figure>
-                    <img src="img/zone-home03.jpg" alt="" class="img-fluid" />
-                  </figure>
-                  <article
-                    class="position-absolute top-0 h-100 p-3 d-flex align-items-start flex-column justify-content-between"
-                  >
-                    <span class="age-label">Age 7-13</span>
-                    <a
-                      href="javascript:void(0)"
-                      class="desc background-thirdcolour"
-                    >
-                      <h4 class="text-uppercase font-semibold">
-                        BIG KIDS ZONE
-                      </h4>
-                      <p>
-                        Challenging obstacle courses, ninja warrior sections,
-                        sports courts, and arcade games for older kids seeking
-                        adventure.
-                      </p>
-                      <span
-                        class="icon-arrow-right2 icomoon position-absolute"
-                      ></span>
-                    </a>
-                  </article>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--/ marquee-->
-
-      <!-- who v r section -->
-      <section class="who-we-are-home-section position-relative">
-        <img
-          src="img/whovr-rt-icon01.png"
-          alt=""
-          class="whovr01icon position-absolute"
-        />
-        <img
-          src="img/whovr-rt-icon02.png"
-          alt=""
-          class="whovr02icon position-absolute"
-        />
-        <div class="container">
-          <div class="row justify-content-between">
-            <div class="col-md-4 left-col">
-              <img src="img/whovr-img.jpg" alt="" class="img-fluid" />
-            </div>
-            <div class="col-md-7 right-col">
-              <div class="section-title">
-                <p class="font-primary subtext">[WHO WE ARE]</p>
-                <h2>
-                  GET TO KNOW ABOUT
-                  <span class="font-secondary">PLAYNATION</span>
-                </h2>
-              </div>
+  <!-- main-->
+  <main>
+    <!-- hero section -->
+    <section class="hero-section position-relative">
+      <div class="custom-container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h1 class="text-uppercase" data-aos="fade-up" data-aos-duration="800">
+              <span>LUXURY</span> INDOOR <br />
+              PLAY EXPERIENCE
+            </h1>
+            <article data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
               <p>
                 The ultimate indoor playground designed for kids ages 0-13.
                 Climb, jump, explore, and create unforgettable memories in our
                 climate-controlled wonderland.
               </p>
+              <a href="javascript:void(0) " class="orange-btn d-inline-block mt-3">Explore Play Zones <span
+                  class="icon-arrow-right2"></span></a>
+            </article>
 
-              <div class="row pt-5">
-                <div class="col-sm-6">
-                  <article class="pt-5">
-                    <h3 class="font-semibold">DEEP CLEANED DAILY</h3>
+            <div class="hero-swiper overflow-hidden" data-aos="fade-up" data-aos-duration="900" data-aos-delay="400">
+              <!-- Swiper -->
+              <div class="swiper mySwiper-hero">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="img/herocarousel-img01.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/herocarousel-img02.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/herocarousel-img03.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/herocarousel-img01.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/herocarousel-img02.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/herocarousel-img03.jpg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--/ swiper -->
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right-swiper d-none d-lg-block">
+        <div class="swiper mySwiper-hero-right">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/hero-right-carousel-img01.jpg" class="img-fluid w-100" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/hero-right-carousel-img01.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/hero-right-carousel-img02.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/hero-right-carousel-img03.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/ Hero Section -->
+
+    <!-- marquee-->
+    <section class="marquee-section">
+      <img src="img/zoneimg01.png" alt="" class="zoneicon01" />
+      <div class="custom-marquee-wrapper">
+        <div class="custom-marquee d-flex gap-5">
+          <h6 class="mb-0">SOFT PLAY AREA</h6>
+          <h6 class="mb-0">BALL PIT</h6>
+          <h6 class="mb-0">BABY SWINGS</h6>
+          <h6 class="mb-0">SOFT PLAY AREA</h6>
+          <h6 class="mb-0">BALL PIT</h6>
+          <h6 class="mb-0">BABY SWINGS</h6>
+        </div>
+      </div>
+
+      <!-- zones section-->
+      <div class="zone-section position-relative">
+        <div class="custom-container">
+          <div class="section-title text-center py-5" data-aos="fade-up" data-aos-duration="800">
+            <p class="font-thirdcolour subtext">[THE PLAY GROUND]</p>
+            <h2>THREE AMAZING AGE ZONES</h2>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+              <div class="zone-col position-relative">
+                <figure>
+                  <img src="img/zone-home01.jpg" alt="" class="img-fluid" />
+                </figure>
+                <article
+                  class="position-absolute top-0 h-100 p-3 d-flex align-items-start flex-column justify-content-between">
+                  <span class="age-label">Age 0-3</span>
+                  <a href="javascript:void(0)" class="desc background-thirdcolour">
+                    <h4 class="text-uppercase font-semibold">
+                      MINI KIDS ZONE
+                    </h4>
                     <p>
-                      All equipment sanitized multiple times throughout the day
+                      A safe, soft environment designed specifically for our
+                      youngest explorers. Padded play structures, sensory
+                      activities, and crawl spaces.
                     </p>
-                  </article>
-                </div>
-                <div class="col-sm-6">
-                  <article class="pt-5">
-                    <h3 class="font-semibold">ACTIVE SUPERVISION</h3>
-                    <p>Trained staff monitoring all play zones at all times</p>
-                  </article>
-                </div>
-                <div class="col-sm-6">
-                  <article class="pt-5">
-                    <h3 class="font-semibold">FIRST AID READY</h3>
+                    <span class="icon-arrow-right2 icomoon position-absolute"></span>
+                  </a>
+                </article>
+              </div>
+            </div>
+            <div class="col-lg-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="250">
+              <div class="zone-col position-relative">
+                <figure>
+                  <img src="img/zone-home02.jpg" alt="" class="img-fluid" />
+                </figure>
+                <article
+                  class="position-absolute top-0 h-100 p-3 d-flex align-items-start flex-column justify-content-between">
+                  <span class="age-label">Age 3-6</span>
+                  <a href="javascript:void(0)" class="desc background-thirdcolour">
+                    <h4 class="text-uppercase font-semibold">KIDS ZONE</h4>
                     <p>
-                      CPR certified staff and fully stocked first aid stations
+                      Interactive play structures, climbing walls, slides, and
+                      imaginative play areas that encourage creativity and
+                      physical activity.
                     </p>
-                  </article>
-                </div>
-                <div class="col-sm-6">
-                  <article class="pt-5">
-                    <h3 class="font-semibold">SECURE FACILITY</h3>
-                    <p>Controlled entry/exit with full camera monitoring</p>
-                  </article>
-                </div>
+                    <span class="icon-arrow-right2 icomoon position-absolute"></span>
+                  </a>
+                </article>
+              </div>
+            </div>
+            <div class="col-lg-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+              <div class="zone-col position-relative">
+                <figure>
+                  <img src="img/zone-home03.jpg" alt="" class="img-fluid" />
+                </figure>
+                <article
+                  class="position-absolute top-0 h-100 p-3 d-flex align-items-start flex-column justify-content-between">
+                  <span class="age-label">Age 7-13</span>
+                  <a href="javascript:void(0)" class="desc background-thirdcolour">
+                    <h4 class="text-uppercase font-semibold">
+                      BIG KIDS ZONE
+                    </h4>
+                    <p>
+                      Challenging obstacle courses, ninja warrior sections,
+                      sports courts, and arcade games for older kids seeking
+                      adventure.
+                    </p>
+                    <span class="icon-arrow-right2 icomoon position-absolute"></span>
+                  </a>
+                </article>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <!--/ who v r section-->
+      </div>
+    </section>
+    <!--/ marquee-->
 
-      <!-- safety section-->
-      <section class="safety-section">
-        <div class="section-title text-center py-5">
-          <p class="font-thirdcolour subtext">[SAFETY FIRST]</p>
-          <h2>
-            YOUR CHILD’S SAFETY IS
-            <span class="font-secondary">OUR PRIORITY</span>
-          </h2>
-          <p>
-            We maintain the highest standards of cleanliness and safety
-            protocols.
-          </p>
-        </div>
+    <!-- who v r section -->
+    <section class="who-we-are-home-section position-relative">
+      <img src="img/whovr-rt-icon01.png" alt="" class="whovr01icon position-absolute" />
+      <img src="img/whovr-rt-icon02.png" alt="" class="whovr02icon position-absolute" />
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-md-4 left-col" data-aos="fade-up" data-aos-duration="900">
+            <img src="img/whovr-img.jpg" alt="" class="img-fluid" />
+          </div>
+          <div class="col-md-7 right-col" data-aos="fade-up" data-aos-duration="900" data-aos-delay="200">
+            <div class="section-title">
+              <p class="font-primary subtext">[WHO WE ARE]</p>
+              <h2>
+                GET TO KNOW ABOUT
+                <span class="font-secondary">PLAYNATION</span>
+              </h2>
+            </div>
+            <p>
+              The ultimate indoor playground designed for kids ages 0-13.
+              Climb, jump, explore, and create unforgettable memories in our
+              climate-controlled wonderland.
+            </p>
 
-        <div class="container">
-          <div class="row mt-4">
-            <div class="col-md-3">
-              <div class="safety-col text-center">
-                <h3 class="number">01</h3>
-                <figure class="mx-auto">
-                  <i class="fi fi-ts-hand-cleaning icomoon"></i>
-                </figure>
-                <article class="text-center">
-                  <h4 class="font-bold">DEEP CLEANED DAILY</h4>
+            <div class="row pt-5">
+              <div class="col-sm-6" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+                <article class="pt-5">
+                  <h3 class="font-semibold">DEEP CLEANED DAILY</h3>
                   <p>
                     All equipment sanitized multiple times throughout the day
                   </p>
                 </article>
               </div>
-            </div>
-
-            <div class="col-md-3">
-              <div class="safety-col text-center">
-                <h3 class="number">02</h3>
-                <figure class="mx-auto">
-                  <i class="fi fi-ts-camera-cctv icomoon"></i>
-                </figure>
-                <article class="text-center">
-                  <h4 class="font-bold">ACTIVE SUPERVISION</h4>
+              <div class="col-sm-6" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
+                <article class="pt-5">
+                  <h3 class="font-semibold">ACTIVE SUPERVISION</h3>
                   <p>Trained staff monitoring all play zones at all times</p>
                 </article>
               </div>
-            </div>
-
-            <div class="col-md-3">
-              <div class="safety-col text-center">
-                <h3 class="number">03</h3>
-                <figure class="mx-auto">
-                  <i class="fi fi-ts-capsules icomoon"></i>
-                </figure>
-                <article class="text-center">
-                  <h4 class="font-bold">FIRST AID READY</h4>
+              <div class="col-sm-6" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">
+                <article class="pt-5">
+                  <h3 class="font-semibold">FIRST AID READY</h3>
                   <p>
                     CPR certified staff and fully stocked first aid stations
                   </p>
                 </article>
               </div>
-            </div>
-
-            <div class="col-md-3">
-              <div class="safety-col text-center">
-                <h3 class="number">04</h3>
-                <figure class="mx-auto">
-                  <i class="fi fi-ts-shield-check icomoon"></i>
-                </figure>
-                <article class="text-center">
-                  <h4 class="font-bold">SECURE FACILITY</h4>
+              <div class="col-sm-6" data-aos="fade-up" data-aos-duration="700" data-aos-delay="400">
+                <article class="pt-5">
+                  <h3 class="font-semibold">SECURE FACILITY</h3>
                   <p>Controlled entry/exit with full camera monitoring</p>
                 </article>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <!--/ safety section-->
+      </div>
+    </section>
+    <!--/ who v r section-->
 
-      <!-- birthday Celebrations Section-->
-      <section class="birthday-celebrations-section">
-        <div class="container">
-          <div class="section-title text-center py-5">
-            <p class="font-secondary subtext">[BIRTHDAY PARTIES]</p>
-            <h2>
-              UNFORGETTABLE
-              <span class="font-white">BIRTHDAY CELEBRATIONS</span>
-            </h2>
-            <p>
-              Let us handle everything while you create magical memories with
-              your little one.
-            </p>
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <figure class="p-0 m-0">
-                <img src="img/birthday-img-home.jpg" alt="" class="img-fluid" />
+    <!-- safety section-->
+    <section class="safety-section">
+      <div class="section-title text-center py-5" data-aos="fade-up" data-aos-duration="800">
+        <p class="font-thirdcolour subtext">[SAFETY FIRST]</p>
+        <h2>
+          YOUR CHILD’S SAFETY IS
+          <span class="font-secondary">OUR PRIORITY</span>
+        </h2>
+        <p>
+          We maintain the highest standards of cleanliness and safety
+          protocols.
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="row mt-4">
+          <div class="col-md-3" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+            <div class="safety-col text-center">
+              <h3 class="number">01</h3>
+              <figure class="mx-auto">
+                <i class="fi fi-ts-hand-cleaning icomoon"></i>
               </figure>
+              <article class="text-center">
+                <h4 class="font-bold">DEEP CLEANED DAILY</h4>
+                <p>
+                  All equipment sanitized multiple times throughout the day
+                </p>
+              </article>
             </div>
-            <div class="col-md-6 align-self-center">
-              <div class="birthday-rt-col d-flex">
-                <figure>
-                  <i class="fi fi-ts-balloon icomoon"></i>
-                </figure>
-                <article class="ps-4">
-                  <h4 class="font-bold font-white text-uppercase m-0 pb-2">
-                    Essential Package
-                  </h4>
-                  <p class="font-white">
-                    2 hours of play • Private party room • Up to 15 kids
-                  </p>
-                </article>
-              </div>
+          </div>
 
-              <div class="birthday-rt-col d-flex">
-                <figure>
-                  <i class="fi fi-ts-party-horn icomoon"></i>
-                </figure>
-                <article class="ps-4">
-                  <h4 class="font-bold font-white text-uppercase m-0 pb-2">
-                    Deluxe Package
-                  </h4>
-                  <p class="font-white">
-                    3 hours of play • Decorations • Party host • Up to 25 kids
-                  </p>
-                </article>
-              </div>
+          <div class="col-md-3" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
+            <div class="safety-col text-center">
+              <h3 class="number">02</h3>
+              <figure class="mx-auto">
+                <i class="fi fi-ts-camera-cctv icomoon"></i>
+              </figure>
+              <article class="text-center">
+                <h4 class="font-bold">ACTIVE SUPERVISION</h4>
+                <p>Trained staff monitoring all play zones at all times</p>
+              </article>
+            </div>
+          </div>
 
-              <div class="birthday-rt-col d-flex">
-                <figure>
-                  <i class="fi fi-ts-glass-cheers icomoon"></i>
-                </figure>
-                <article class="ps-4">
-                  <h4 class="font-bold font-white text-uppercase m-0 pb-2">
-                    Premium Package
-                  </h4>
-                  <p class="font-white">
-                    4 hours • Full setup • Catering • Entertainment • Up to 40
-                    kids
-                  </p>
-                </article>
-              </div>
+          <div class="col-md-3" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">
+            <div class="safety-col text-center">
+              <h3 class="number">03</h3>
+              <figure class="mx-auto">
+                <i class="fi fi-ts-capsules icomoon"></i>
+              </figure>
+              <article class="text-center">
+                <h4 class="font-bold">FIRST AID READY</h4>
+                <p>
+                  CPR certified staff and fully stocked first aid stations
+                </p>
+              </article>
+            </div>
+          </div>
 
-              <a
-                href="javascript:void(0)"
-                class="orange-btn d-inline-block mt-3"
-                >Explore Play Zones <span class="icon-arrow-right2"></span
-              ></a>
-
-              <a
-                href="javascript:void(0)"
-                class="border-btn d-inline-block mt-3 text-black font-semibold"
-                >View All Packages <span class="icon-arrow-right2"></span
-              ></a>
+          <div class="col-md-3" data-aos="fade-up" data-aos-duration="700" data-aos-delay="400">
+            <div class="safety-col text-center">
+              <h3 class="number">04</h3>
+              <figure class="mx-auto">
+                <i class="fi fi-ts-shield-check icomoon"></i>
+              </figure>
+              <article class="text-center">
+                <h4 class="font-bold">SECURE FACILITY</h4>
+                <p>Controlled entry/exit with full camera monitoring</p>
+              </article>
             </div>
           </div>
         </div>
-      </section>
-      <!--/ Birthday Celebrations Section -->
+      </div>
+    </section>
+    <!--/ safety section-->
 
-      <!-- pricing section -->
-      <section class="pricing-section">
-        <div class="section-title text-center py-5">
-          <p class="font-thirdcolour subtext">[PRICING]</p>
+    <!-- birthday Celebrations Section-->
+    <section class="birthday-celebrations-section">
+      <div class="container">
+        <div class="section-title text-center py-5" data-aos="fade-up" data-aos-duration="800">
+          <p class="font-secondary subtext">[BIRTHDAY PARTIES]</p>
           <h2>
-            SIMPLE, TRANSPARENT <span class="font-secondary">PRICING</span>
+            UNFORGETTABLE
+            <span class="font-white">BIRTHDAY CELEBRATIONS</span>
           </h2>
           <p>
-            Choose the plan that works best for your family. All packages
-            include unlimited play time during your visit.
+            Let us handle everything while you create magical memories with
+            your little one.
           </p>
         </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <img src="img/pricing-left-img.png" alt="" class="img-fluid" />
+        <div class="row">
+          <div class="col-md-6" data-aos="fade-up" data-aos-duration="900">
+            <figure class="p-0 m-0">
+              <img src="img/birthday-img-home.jpg" alt="" class="img-fluid" />
+            </figure>
+          </div>
+          <div class="col-md-6 align-self-center">
+            <div class="birthday-rt-col d-flex" data-aos="fade-up" data-aos-duration="700" data-aos-delay="150">
+              <figure>
+                <i class="fi fi-ts-balloon icomoon"></i>
+              </figure>
+              <article class="ps-4">
+                <h4 class="font-bold font-white text-uppercase m-0 pb-2">
+                  Essential Package
+                </h4>
+                <p class="font-white">
+                  2 hours of play • Private party room • Up to 15 kids
+                </p>
+              </article>
             </div>
-            <div class="col-md-8">
-              <div class="price-col">
-                <div class="row">
-                  <div class="col-md-8 left-price-col">
-                    <h4 class="font-bold p-0 m-0">SINGLE VISIT</h4>
-                    <p><small>Perfect for a fun day out</small></p>
-                    <ul>
-                      <li>Unlimited play time</li>
-                      <li>Access to all age zones</li>
-                      <li>Parent lounge access</li>
-                      <li>Free WiFi</li>
-                    </ul>
-                  </div>
-                  <div class="col-md-4 text-center align-self-center">
-                    <h1 class="font-bold">$18</h1>
-                    <p>Per child</p>
-                    <a
-                      href="javascript:void(0)"
-                      class="primary-btn d-inline-block mt-3"
-                      >Book Pass
-                    </a>
-                  </div>
-                </div>
-              </div>
 
-              <div class="price-col mt-3">
-                <div class="row">
-                  <div class="col-md-8 left-price-col">
-                    <h4 class="font-bold p-0 m-0">MONTHLY MEMBERSHIP</h4>
-                    <p><small>Best value for regular visitors</small></p>
-                    <ul>
-                      <li>Unlimited visits all month</li>
-                      <li>10% off party bookings</li>
-                      <li>Priority party booking</li>
-                      <li>Guest passes (2/month)</li>
-                      <li>Exclusive member events</li>
-                    </ul>
-                  </div>
-                  <div class="col-md-4 text-center align-self-center">
-                    <h1 class="font-bold">$59</h1>
-                    <p>Per Month</p>
-                    <a
-                      href="javascript:void(0)"
-                      class="primary-btn d-inline-block mt-3"
-                      >Book Pass
-                    </a>
-                  </div>
-                </div>
-              </div>
+            <div class="birthday-rt-col d-flex" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">
+              <figure>
+                <i class="fi fi-ts-party-horn icomoon"></i>
+              </figure>
+              <article class="ps-4">
+                <h4 class="font-bold font-white text-uppercase m-0 pb-2">
+                  Deluxe Package
+                </h4>
+                <p class="font-white">
+                  3 hours of play • Decorations • Party host • Up to 25 kids
+                </p>
+              </article>
             </div>
+
+            <div class="birthday-rt-col d-flex" data-aos="fade-up" data-aos-duration="700" data-aos-delay="450">
+              <figure>
+                <i class="fi fi-ts-glass-cheers icomoon"></i>
+              </figure>
+              <article class="ps-4">
+                <h4 class="font-bold font-white text-uppercase m-0 pb-2">
+                  Premium Package
+                </h4>
+                <p class="font-white">
+                  4 hours • Full setup • Catering • Entertainment • Up to 40
+                  kids
+                </p>
+              </article>
+            </div>
+
+            <a href="javascript:void(0)" class="orange-btn d-inline-block mt-3">Explore Play Zones <span
+                class="icon-arrow-right2"></span></a>
+
+            <a href="javascript:void(0)" class="border-btn d-inline-block mt-3 text-black font-semibold">View All
+              Packages <span class="icon-arrow-right2"></span></a>
           </div>
         </div>
-      </section>
-      <!--/ pricing section-->
-
-      <!-- testimonias -->
-      <section class="home-testimonials">
-        <div class="section-title text-center py-5">
-          <p class="font-thirdcolour subtext">[REVIEWS]</p>
-          <h2>WHAT PARENTS ARE<span class="font-primary"> SAYING</span></h2>
-          <p>Don't just take our word for it - hear from our happy families!</p>
-        </div>
-
-        <div class="container">
-          <div class="swiper-container swiper-testimonials-home">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide text-left">
-                <img src="img/quote-right.svg" alt="" class="quote-icon" />
-                <div class="test-user d-flex justify-content-start">
-                  <img
-                    src="img/thumb-testimonial.png"
-                    alt=""
-                    class="test-user-img"
-                  />
-                  <article>
-                    <p class="test-name">Sarah Mitchell</p>
-                    <p class="font-secondary"><small>London, UK</small></p>
-                  </article>
-                </div>
-                <p class="pt-4">
-                  Playnation is our go-to spot for rainy days! My kids
-                  absolutely love the variety of activities and I appreciate how
-                  clean and well-maintained everything is. The staff is
-                  incredibly friendly too!
-                </p>
-              </div>
-              <div class="swiper-slide text-left">
-                <img src="img/quote-right.svg" alt="" class="quote-icon" />
-                <div class="test-user d-flex justify-content-start">
-                  <img
-                    src="img/thumb-testimonial.png"
-                    alt=""
-                    class="test-user-img"
-                  />
-                  <article>
-                    <p class="test-name">Sarah Mitchell</p>
-                    <p class="font-secondary"><small>London, UK</small></p>
-                  </article>
-                </div>
-                <p class="pt-4">
-                  Playnation is our go-to spot for rainy days! My kids
-                  absolutely love the variety of activities and I appreciate how
-                  clean and well-maintained everything is. The staff is
-                  incredibly friendly too!
-                </p>
-              </div>
-              <div class="swiper-slide text-left">
-                <img src="img/quote-right.svg" alt="" class="quote-icon" />
-                <div class="test-user d-flex justify-content-start">
-                  <img
-                    src="img/thumb-testimonial.png"
-                    alt=""
-                    class="test-user-img"
-                  />
-                  <article>
-                    <p class="test-name">Sarah Mitchell</p>
-                    <p class="font-secondary"><small>London, UK</small></p>
-                  </article>
-                </div>
-                <p class="pt-4">
-                  Playnation is our go-to spot for rainy days! My kids
-                  absolutely love the variety of activities and I appreciate how
-                  clean and well-maintained everything is. The staff is
-                  incredibly friendly too!
-                </p>
-              </div>
-              <div class="swiper-slide text-left">
-                <img src="img/quote-right.svg" alt="" class="quote-icon" />
-                <div class="test-user d-flex justify-content-start">
-                  <img
-                    src="img/thumb-testimonial.png"
-                    alt=""
-                    class="test-user-img"
-                  />
-                  <article>
-                    <p class="test-name">Sarah Mitchell</p>
-                    <p class="font-secondary"><small>London, UK</small></p>
-                  </article>
-                </div>
-                <p class="pt-4">
-                  Playnation is our go-to spot for rainy days! My kids
-                  absolutely love the variety of activities and I appreciate how
-                  clean and well-maintained everything is. The staff is
-                  incredibly friendly too!
-                </p>
-              </div>
-              <div class="swiper-slide text-left">
-                <img src="img/quote-right.svg" alt="" class="quote-icon" />
-                <div class="test-user d-flex justify-content-start">
-                  <img
-                    src="img/thumb-testimonial.png"
-                    alt=""
-                    class="test-user-img"
-                  />
-                  <article>
-                    <p class="test-name">Sarah Mitchell</p>
-                    <p class="font-secondary"><small>London, UK</small></p>
-                  </article>
-                </div>
-                <p class="pt-4">
-                  Playnation is our go-to spot for rainy days! My kids
-                  absolutely love the variety of activities and I appreciate how
-                  clean and well-maintained everything is. The staff is
-                  incredibly friendly too!
-                </p>
-              </div>
-            </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-      </section>
-      <!--testimonials-->
-
-      <!-- reach us-->
-      <section class="reachus-home">
-        <img src="img/balloon01.png" alt="" class="reachicon01">
-        <img src="img/partyicon.png" alt="" class="reachicon02">
-
-        <div class="container">
-          <div class="section-title text-center py-5">
-            <p class="font-thirdcolour subtext">[REACH US]</p>
-            <h2>
-              READY TO START <span class="font-secondary">THE ADVENTURE?</span>
-            </h2>
-            <p class="pb-3">
-              Join thousands of happy families who have made Playnation their
-              favorite play destination. Your child's next great adventure
-              awaits!
-            </p>
-             <a
-                href="javascript:void(0)"
-                class="border-btn d-inline-block mt-3 text-black font-semibold"
-                >Plan your Visit <span class="icon-arrow-right2"></span
-              ></a>
-             <a
-                href="javascript:void(0)"
-                class="primary-btn d-inline-block mt-3"
-                >Book a Party <span class="icon-arrow-right2"></span
-              ></a>
-          </div>
-        </div>
-      </section>
-      <!--/ reach us-->
-    </main>
-    <!--/ main-->
-
-    <!-- footer-->
-    <footer>
-      <div class="custom-container">
-         <div class="row border-bottom pb-5">
-            <div class="col-md-3">
-               <div class="pe-5">
-                 <a href="javascript:void(0)">
-                  <img src="img/logo.svg" alt="" class="footer-logo">
-               </a>
-               <p class="pt-3">Creating magical memories through play since 2020. The premier indoor playground destination for families.</p>
-                  <div class="d-flex header-social justify-content-start gap-2 pt-3">
-                    <a href="javascript:void(0)" target="_blank"
-                      ><span class="icon-facebook icomoon"></span
-                    ></a>
-                    <a href="javascript:void(0)" target="_blank"
-                      ><span class="icon-linkedin2 icomoon"></span
-                    ></a>
-                  </div>
-               </div>
-            </div>
-            <div class="col-md-8">
-               <div class="row">
-                  <div class="col-md-3">
-                     <div class="footer-links">
-                        <h4>Quick Links</h4>
-                        <ul>
-                           <li><a href="">About Us</a></li>
-                           <li><a href="">The Playground</a></li>
-                           <li><a href="">Pricing</a></li>
-                           <li><a href="">Parties & Groups</a></li>                           
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="col-md-3">
-                     <div class="footer-links">
-                        <h4>Information</h4>
-                        <ul>
-                           <li><a href="">Hours & Location</a></li>
-                           <li><a href="">Safety & Rules</a></li>
-                           <li><a href="">FAQ</a></li>
-                           <li><a href="">Birthday Club</a></li>                           
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="col-md-3">
-                     <div class="footer-links">
-                        <h4>Resources</h4>
-                        <ul>
-                           <li><a href="">Field Trips</a></li>
-                           <li><a href="">Blog</a></li>
-                           <li><a href="">Join Our Team</a></li>
-                        </ul>
-                     </div>
-                  </div>
-                   <div class="col-md-3">
-                     <div class="footer-links">
-                        <h4>Contact</h4>
-                        <ul>
-                           <li><a href="">(555) 123-4567</a></li>
-                           <li><a href="">info@playnation.com</a></li>
-                           <li><a href="">123, Play street, Funcity, NJ</a></li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <p class="text-center pt-5">© 2026 Playnation. All rights reserved. | <a href="">Privacy Policy</a> | <a href="">Terms of Services</a></p>
       </div>
-    </footer>
-    <!--/ footer-->
+    </section>
+    <!--/ Birthday Celebrations Section -->
 
-    <!-- scripts -->
-    <!--[if lte IE 9]>
+    <!-- pricing section -->
+    <section class="pricing-section">
+      <div class="section-title text-center py-5" data-aos="fade-up" data-aos-duration="800">
+        <p class="font-thirdcolour subtext">[PRICING]</p>
+        <h2>
+          SIMPLE, TRANSPARENT <span class="font-secondary">PRICING</span>
+        </h2>
+        <p>
+          Choose the plan that works best for your family. All packages
+          include unlimited play time during your visit.
+        </p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4" data-aos="fade-up" data-aos-duration="900">
+            <img src="img/pricing-left-img.png" alt="" class="img-fluid" />
+          </div>
+          <div class="col-md-8">
+            <div class="price-col" data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">
+              <div class="row">
+                <div class="col-md-8 left-price-col">
+                  <h4 class="font-bold p-0 m-0">SINGLE VISIT</h4>
+                  <p><small>Perfect for a fun day out</small></p>
+                  <ul>
+                    <li>Unlimited play time</li>
+                    <li>Access to all age zones</li>
+                    <li>Parent lounge access</li>
+                    <li>Free WiFi</li>
+                  </ul>
+                </div>
+                <div class="col-md-4 text-center align-self-center">
+                  <h1 class="font-bold">$18</h1>
+                  <p>Per child</p>
+                  <a href="javascript:void(0)" class="primary-btn d-inline-block mt-3">Book Pass
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="price-col mt-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+              <div class="row">
+                <div class="col-md-8 left-price-col">
+                  <h4 class="font-bold p-0 m-0">MONTHLY MEMBERSHIP</h4>
+                  <p><small>Best value for regular visitors</small></p>
+                  <ul>
+                    <li>Unlimited visits all month</li>
+                    <li>10% off party bookings</li>
+                    <li>Priority party booking</li>
+                    <li>Guest passes (2/month)</li>
+                    <li>Exclusive member events</li>
+                  </ul>
+                </div>
+                <div class="col-md-4 text-center align-self-center">
+                  <h1 class="font-bold">$59</h1>
+                  <p>Per Month</p>
+                  <a href="javascript:void(0)" class="primary-btn d-inline-block mt-3">Book Pass
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/ pricing section-->
+
+    <!-- testimonias -->
+    <section class="home-testimonials">
+      <div class="section-title text-center py-5" data-aos="fade-up" data-aos-duration="800">
+        <p class="font-thirdcolour subtext">[REVIEWS]</p>
+        <h2>WHAT PARENTS ARE<span class="font-primary"> SAYING</span></h2>
+        <p>Don't just take our word for it - hear from our happy families!</p>
+      </div>
+
+      <div class="container">
+        <div class="swiper-container swiper-testimonials-home" data-aos="fade-up" data-aos-duration="900"
+          data-aos-delay="200">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide text-left">
+              <img src="img/quote-right.svg" alt="" class="quote-icon" />
+              <div class="test-user d-flex justify-content-start">
+                <img src="img/thumb-testimonial.png" alt="" class="test-user-img" />
+                <article>
+                  <p class="test-name">Sarah Mitchell</p>
+                  <p class="font-secondary"><small>London, UK</small></p>
+                </article>
+              </div>
+              <p class="pt-4">
+                Playnation is our go-to spot for rainy days! My kids
+                absolutely love the variety of activities and I appreciate how
+                clean and well-maintained everything is. The staff is
+                incredibly friendly too!
+              </p>
+            </div>
+            <div class="swiper-slide text-left">
+              <img src="img/quote-right.svg" alt="" class="quote-icon" />
+              <div class="test-user d-flex justify-content-start">
+                <img src="img/thumb-testimonial.png" alt="" class="test-user-img" />
+                <article>
+                  <p class="test-name">Sarah Mitchell</p>
+                  <p class="font-secondary"><small>London, UK</small></p>
+                </article>
+              </div>
+              <p class="pt-4">
+                Playnation is our go-to spot for rainy days! My kids
+                absolutely love the variety of activities and I appreciate how
+                clean and well-maintained everything is. The staff is
+                incredibly friendly too!
+              </p>
+            </div>
+            <div class="swiper-slide text-left">
+              <img src="img/quote-right.svg" alt="" class="quote-icon" />
+              <div class="test-user d-flex justify-content-start">
+                <img src="img/thumb-testimonial.png" alt="" class="test-user-img" />
+                <article>
+                  <p class="test-name">Sarah Mitchell</p>
+                  <p class="font-secondary"><small>London, UK</small></p>
+                </article>
+              </div>
+              <p class="pt-4">
+                Playnation is our go-to spot for rainy days! My kids
+                absolutely love the variety of activities and I appreciate how
+                clean and well-maintained everything is. The staff is
+                incredibly friendly too!
+              </p>
+            </div>
+            <div class="swiper-slide text-left">
+              <img src="img/quote-right.svg" alt="" class="quote-icon" />
+              <div class="test-user d-flex justify-content-start">
+                <img src="img/thumb-testimonial.png" alt="" class="test-user-img" />
+                <article>
+                  <p class="test-name">Sarah Mitchell</p>
+                  <p class="font-secondary"><small>London, UK</small></p>
+                </article>
+              </div>
+              <p class="pt-4">
+                Playnation is our go-to spot for rainy days! My kids
+                absolutely love the variety of activities and I appreciate how
+                clean and well-maintained everything is. The staff is
+                incredibly friendly too!
+              </p>
+            </div>
+            <div class="swiper-slide text-left">
+              <img src="img/quote-right.svg" alt="" class="quote-icon" />
+              <div class="test-user d-flex justify-content-start">
+                <img src="img/thumb-testimonial.png" alt="" class="test-user-img" />
+                <article>
+                  <p class="test-name">Sarah Mitchell</p>
+                  <p class="font-secondary"><small>London, UK</small></p>
+                </article>
+              </div>
+              <p class="pt-4">
+                Playnation is our go-to spot for rainy days! My kids
+                absolutely love the variety of activities and I appreciate how
+                clean and well-maintained everything is. The staff is
+                incredibly friendly too!
+              </p>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!--testimonials-->
+
+    <!-- reach us-->
+    <section class="reachus-home">
+      <img src="img/balloon01.png" alt="" class="reachicon01">
+      <img src="img/partyicon.png" alt="" class="reachicon02">
+
+      <div class="container">
+        <div class="section-title text-center py-5" data-aos="fade-up" data-aos-duration="800">
+          <p class="font-thirdcolour subtext">[REACH US]</p>
+          <h2>
+            READY TO START <span class="font-secondary">THE ADVENTURE?</span>
+          </h2>
+          <p class="pb-3" data-aos="fade-up" data-aos-duration="700" data-aos-delay="150">
+            Join thousands of happy families who have made Playnation their
+            favorite play destination. Your child's next great adventure
+            awaits!
+          </p>
+          <a href="javascript:void(0)" class="border-btn d-inline-block mt-3 text-black font-semibold"
+            data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">Plan your Visit
+            <span class="icon-arrow-right2"></span></a>
+          <a href="javascript:void(0)" class="primary-btn d-inline-block mt-3" data-aos="fade-up"
+            data-aos-duration="600" data-aos-delay="400">Book a Party <span class="icon-arrow-right2"></span></a>
+        </div>
+      </div>
+    </section>
+    <!--/ reach us-->
+  </main>
+  <!--/ main-->
+
+  <!-- footer-->
+  <footer>
+    <div class="custom-container">
+      <div class="row border-bottom pb-5" data-aos="fade-up" data-aos-duration="800">
+        <div class="col-md-3">
+          <div class="pe-5">
+            <a href="javascript:void(0)">
+              <img src="img/logo.svg" alt="" class="footer-logo">
+            </a>
+            <p class="pt-3">Creating magical memories through play since 2020. The premier indoor playground destination
+              for families.</p>
+            <div class="d-flex header-social justify-content-start gap-2 pt-3">
+              <a href="javascript:void(0)" target="_blank"><span class="icon-facebook icomoon"></span></a>
+              <a href="javascript:void(0)" target="_blank"><span class="icon-linkedin2 icomoon"></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                  <li><a href="">About Us</a></li>
+                  <li><a href="">The Playground</a></li>
+                  <li><a href="">Pricing</a></li>
+                  <li><a href="">Parties & Groups</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="footer-links">
+                <h4>Information</h4>
+                <ul>
+                  <li><a href="">Hours & Location</a></li>
+                  <li><a href="">Safety & Rules</a></li>
+                  <li><a href="">FAQ</a></li>
+                  <li><a href="">Birthday Club</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="footer-links">
+                <h4>Resources</h4>
+                <ul>
+                  <li><a href="">Field Trips</a></li>
+                  <li><a href="">Blog</a></li>
+                  <li><a href="">Join Our Team</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="footer-links">
+                <h4>Contact</h4>
+                <ul>
+                  <li><a href="">(555) 123-4567</a></li>
+                  <li><a href="">info@playnation.com</a></li>
+                  <li><a href="">123, Play street, Funcity, NJ</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="text-center pt-5">© 2026 Playnation. All rights reserved. | <a href="">Privacy Policy</a> | <a
+          href="">Terms of Services</a></p>
+          
+    </div>
+      <a href="javascript:void(0)" class="movetop rounded-2" id="movetop">
+            <i class="fi fi-ts-angle-double-small-up"></i>
+        </a>
+  </footer>
+  <!--/ footer-->
+
+  <!-- scripts -->
+  <!--[if lte IE 9]>
       <script src="js/ie.lteIE9.js"></script>
     <![endif]-->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/swiper.min.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/bsnav.min.js"></script>
-    <script src="js/custom.js"></script>
-    <script>
-      var swiper = new Swiper(".mySwiper-offer", {});
-    </script>
-    <!--/ scripts -->
-  </body>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/bsnav.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper-offer", {});
+  </script>
+  <!--/ scripts -->
+</body>
+
 </html>

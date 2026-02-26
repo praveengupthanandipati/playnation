@@ -1109,4 +1109,37 @@ footer .footer-links ul li a:hover {
     flex: 0 0 50%;
     max-width: 50%;
   }
+}
+
+.movetop {
+  background: #D9273D;
+  color: #D9273D;
+  text-align: center;
+  line-height: 30px;
+  position: fixed;
+  border: 1px solid transparent;
+  padding: 8px;
+  position: fixed;
+  right: 1%;
+  bottom: 50px;
+  z-index: 9999;
+  width: 45px;
+  height: 45px;
+  transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  display: none;
+}
+.movetop:hover {
+  background-color: #c44800;
+  text-decoration: none;
+}
+.movetop:hover i {
+  color: #fff;
+}
+.movetop i {
+  font-size: 21px;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
